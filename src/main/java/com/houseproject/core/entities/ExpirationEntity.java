@@ -17,19 +17,19 @@ public class ExpirationEntity implements ExpirationProduct {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private BigInteger id;
 
-    @Column(name = "expiration_name", nullable = false, length = 200)
+    @Column(name = "expiration_name", nullable = false)
     private String name;
 
-    @Column(name = "expiration_entry-date", nullable = false, length = 200)
+    @Column(name = "expiration_entry-date", nullable = false)
     private LocalDate entryDate;
 
-    @Column(name = "expiration_expiration-date", nullable = false, length = 200)
+    @Column(name = "expiration_expiration-date", nullable = false)
     private LocalDate expirationDate;
 
-    @Column(name = "expiration_amount", nullable = false, length = 200)
+    @Column(name = "expiration_amount", nullable = false)
     private Integer amount;
 
-    @Column(name = "expiration_codebar", nullable = false, length = 200)
+    @Column(name = "expiration_codebar", nullable = false)
     private String codebar;
 
     public ExpirationEntity() {
